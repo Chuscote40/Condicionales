@@ -1,0 +1,85 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f0f7;
+    font-family: Arial, sans-serif;
+}
+
+/* Campos de texto */
+input {
+    width: 300px;
+    padding: 12px;
+    margin: 6px;
+    border: 2px solid #8b5fbf;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #5d2a86;
+    box-shadow: 0 0 5px rgba(93, 42, 134, 0.3);
+}
+
+/* Botones */
+button {
+    width: 300px;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6f3fa5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #542d7d;
+}
+
+/* Botón Registrarse */
+#desactivado:disabled {
+    background-color: #b9a9c7;
+    color: #eeeeee;
+    cursor: not-allowed;
+}
+
+/* Resultado */
+#Resultado {
+    width: 300px;
+    min-height: 45px;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: white;
+    border-left: 5px solid #6f3fa5;
+    color: #333;
+    text-align: center;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    border-top: 3px solid #7b2cbf;
+}
+
+footer br + * {
+    margin-top: 5px;
+}

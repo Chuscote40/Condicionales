@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Coloca tu Email</h1>
+    <input id="Email" type="email" placeholder="Coloca tu email">
+    <h1>Introduce tu contraseña</h1>
+    <input id="Contraseña" type="password" placeholder="Introduce tu contraseña"> 
+
+    <button onclick=Probar()>Verificar</button>
+    <p id="Resultado">Se mostrara si los datos son correctos </p>
+
+<script>
+
+
+function Probar (){
+
+let email = (document.getElementById("Email").value)
+let contraseña = (document.getElementById("Contraseña").value)
+
+if (email == "Chuscote40@condicionales.com" && contraseña == "raulherby" ) {
+    document.getElementById("Resultado").innerHTML = 'Usuario Correcto'
+}
+
+else{ document.getElementById("Resultado").innerHTML = 'Usuario incorrecto'
+
+}
+
+}
+
+
+</script>
+
+<footer>
+    © 2026 - Formulario Insuco <br>
+    Desarrollado por Samuel Salazar - 3°P.A
+</footer> 
+
+</body>
+
+</html>

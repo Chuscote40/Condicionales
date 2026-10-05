@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RayoMacuin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+    <h1>Ingrese la talla de pixeles</h1>
+    <input id="input" type="text">
+
+<button onclick="
+
+
+a = document.querySelector('#input').value
+
+
+        if (a < 576){
+            Resultado = document.querySelector('#Resultado')
+            Resultado.innerHTML = 'xs'}
+
+        else if(a < 768){
+            Resultado = document.querySelector('#Resultado')
+            Resultado.innerHTML = 'sm'
+}
+
+        else if(a < 962){
+            Resultado = document.querySelector('#Resultado')
+            Resultado.innerHTML = 'md'
+}
+
+        else if(a < 1200){
+            Resultado = document.querySelector('#Resultado')
+            Resultado.innerHTML = 'xl'
+}
+        else{
+            Resultado = document.querySelector('#Resultado')
+            Resultado.innerHTML = 'xxl'
+}
+
+"> Verificar </button>
+
+<p id="Resultado">aca estoy y va aparecer el resultado</p>
+
+
+<footer>
+    © 2026 - Formulario Insuco <br>
+    Desarrollado por Samuel Salazar - 3°P.A
+</footer> 
+
+</body>
+
+</html>       

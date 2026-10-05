@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <input type="number" id="input1" placeholder="Peso">
+    <input type="number" id="input2" placeholder="Altura">
+
+    <button onclick="verificaIMC()">Verificar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function verificaIMC() {
+
+            let Peso = Number(document.getElementById("input1").value);
+            let Altura = Number(document.getElementById("input2").value);
+            let resultado = document.getElementById("resultado");
+
+       let imc = Peso/(Altura * Altura);
+console.log(imc)
+
+if (imc <18.5) {
+    console.log("Tienes un imc bajo"); 
+    resultado.innerHTML = "Tienes un imc bajo";
+}
+
+else if (imc >=18.5 && imc <=24.9) {
+    console.log("Tiene un imc normal"); 
+    resultado.innerHTML = "Tiene un imc normal";
+}
+
+else if (imc >25) {
+    console.log("Tienes un imc alto");
+    resultado.innerHTML = "Tienes un imc alto";
+}
+} </script>
+
+<footer>
+    © 2026 - Formulario Insuco <br>
+    Desarrollado por Samuel Salazar - 3°P.A
+</footer> 
+</body>
+</html>

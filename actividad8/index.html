@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input type="text" id="nombre" placeholder="coloca tu nombre">
+<input type="text" id="apellido" placeholder="coloca tu apellido">
+
+<button onclick="Revisar()">Enviar</button>
+<button id="desactivado" disabled onclick ="Registrarse()">Registrarse</button>
+
+<p id="Resultado"></p>
+<script>
+function Revisar() {
+let Nombre = document.getElementById("nombre").value;
+let Apellido = document.getElementById("apellido").value;
+let Desactivado = document.getElementById("desactivado");
+let resultado = document.getElementById("Resultado");
+
+    if (Nombre || Apellido) {
+    
+    resultado.innerHTML = "Ya llego tus datos";
+    Desactivado.disabled = false;
+    }
+
+    else {  
+        resultado.innerHTML = "No llegaron tus datos";
+        Desactivado.disabled = true;
+    }
+
+        function Registrarse (){
+        document.getElementById("Resultado").innerHTML = "esto se mostrara"
+
+}
+
+
+}
+
+
+</script>
+
+
+
+
+
+
+  
+<footer>
+    © 2026 - Formulario Insuco <br>
+    Desarrollado por Samuel Salazar - 3°P.A
+</footer>
+
+    
+</body>
+</html>

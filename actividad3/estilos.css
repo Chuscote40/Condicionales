@@ -1,0 +1,54 @@
+
+body {
+    background-color: #1e1e1e;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #00ff88;
+    margin-bottom: 40px;
+}
+
+/* Cada <p> será una caja */
+p {
+    width: 80%;
+    margin: 25px auto;
+    padding: 25px;
+
+    background-color: #252526;
+    color: #ffffff;
+
+    border-radius: 12px;
+    border-left: 6px solid #00ff88;
+
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 16px;
+    line-height: 1.6;
+
+    /* Mantiene los saltos y espacios del código */
+    white-space: pre-wrap;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Cuando pasas el mouse */
+p:hover {
+    border-left-color: #00ffff;
+    transform: translateY(-3px);
+    transition: 0.2s;
+}
+footer {
+    background-color: #1f1f1f;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    border-top: 3px solid #7b2cbf;
+}

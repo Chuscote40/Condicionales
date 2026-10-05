@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <input type="number" id="input1" placeholder="Temperatura">
+
+    <button onclick="verificaTemperatura()">Verificar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function verificaTemperatura() {
+
+            let Temperatura = Number(document.getElementById("input1").value);
+            let resultado = document.getElementById("resultado");
+
+            if (Temperatura > 30) {
+
+                console.log("Ya está haciendo calor 🥵.");
+                alert("Ya está haciendo calor 🥵.");
+                resultado.textContent = "Ya está haciendo calor 🥵.";
+
+            } else if (Temperatura >= 20 && Temperatura <= 30) {
+
+                console.log("No hace tanto calor 😎.");
+                alert("No hace tanto calor 😎.");
+                resultado.textContent = "No hace tanto calor 😎.";
+
+            } else {
+
+                console.log("Hace frío 🥶.");
+                alert("Hace frío 🥶.");
+                resultado.textContent = "Hace frío 🥶.";
+
+            }
+        }
+    </script>
+<footer>
+    © 2026 - Formulario Insuco <br>
+    Desarrollado por Samuel Salazar - 3°P.A
+</footer>
+
+</body>
+</html>
